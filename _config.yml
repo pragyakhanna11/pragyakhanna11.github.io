@@ -1,0 +1,34 @@
+title: Pragya Khanna
+theme: jekyll-theme-primer
+plugins:
+  - jekyll-feed
+  - jekyll-last-modified-at
+
+# markdown processing
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+  # parse markdown inside HTML tags
+  parse_block_html: true
+
+# rss feed
+author: "Pragya Khanna"
+repository: pragyakhanna11/pragyakhanna11.github.io
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "page"
+      excerpt_separator: "<!--more-->"
+
+sass:
+  load_paths:
+    - _sass
+    - assets/css
+exclude:
+  - .vs
+  - vendor
+  - scripts
+  - README.md
